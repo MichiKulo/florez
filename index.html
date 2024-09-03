@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
+
+    <style>
+        /* Carousel container */
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        /* Slides container */
+        .slides {
+            display: flex;
+            width: 100%; /* El contenedor debe tener un ancho de 100% */
+            animation: slide 9s infinite;
+        }
+
+        /* Individual slide */
+        .slide {
+            min-width: 100%; /* Cada slide debe ocupar el 100% del ancho del contenedor */
+            transition: transform 0.5s ease;
+        }
+
+        /* Images in the slides */
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+            height: 284px;
+        }
+
+        /* Keyframes for the sliding effect */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(0); } /* Primera imagen visible */
+            38% { transform: translateX(-100%); } /* Transición a la segunda imagen */
+            66% { transform: translateX(-100%); } /* Segunda imagen visible */
+            71% { transform: translateX(-200%); } /* Transición a la tercera imagen */
+            100% { transform: translateX(-200%); } /* Tercera imagen visible */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="greetings">
+
+        <span>H</span>
+        <span>E</span>
+        <span>R</span>
+        <span>M</span>
+        <span>O</span>
+        <span>S</span>
+        <span>A</span>
+    </div>
+
+    <div class="carousel">
+        <div class="slides">
+            <!-- Slide images -->
+            <div class="slide"><img src="../jaja2 (1).jpeg" alt="Slide 1"></div>
+            <div class="slide"><img src="../jaja3.jpeg" alt="Slide 2"></div>
+            <div class="slide"><img src="../jaja5.jpg" alt="Slide 3"></div>
+        </div>
+    </div>
+
+
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti!!</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="dos.html">Haga Clic</a>
+        </button>
+        
+    </div>
+</body>
+</html>
